@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feedback | NIGHTCLUB</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="feedback-page">
+
+<nav>
+  <div class="logo">NIGHTCLUB</div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="events.html">Events</a>
+    <a href="contact.html">Contact</a>
+    <a href="feedback.html">Feedback</a>
+  </div>
+</nav>
+
+<div class="center-container">
+  <div class="hero-box">
+    <h1 class="hero-title">Feedback</h1>
+
+    <textarea id="note" placeholder="Write your feedback here..."></textarea><br><br>
+
+    <button onclick="saveFile()">Save Feedback</button>
+    <input type="file" accept=".txt" onchange="loadFile(event)">
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Events | NIGHTCLUB</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="events-page">
+
+<nav>
+  <div class="logo">NIGHTCLUB</div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="events.html">Events</a>
+    <a href="contact.html">Contact</a>
+    <a href="feedback.html">Feedback</a>
+  </div>
+</nav>
+
+<div class="glass-container">
+  <h1>Events</h1>
+
+  <div class="events">
+
+    <div class="event-card">
+      <img src="images/dj.jpg">
+      <h3>DJ Night (Friday 8pm)</h3>
+      <p>Rs. 800</p>
+      <div class="qty-control">
+        <button onclick="decrease('dj')">-</button>
+        <span id="qty-dj">0</span>
+        <button onclick="increase('dj')">+</button>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <img src="images/bollywood.jpg">
+      <h3>Bollywood Night (Saturday 10pm)</h3>
+      <p>Rs. 700</p>
+      <div class="qty-control">
+        <button onclick="decrease('bollywood')">-</button>
+        <span id="qty-bollywood">0</span>
+        <button onclick="increase('bollywood')">+</button>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <img src="images/techno.jpg">
+      <h3>Techno Party (Sunday 9pm)</h3>
+      <p>Rs. 1000</p>
+      <div class="qty-control">
+        <button onclick="decrease('techno')">-</button>
+        <span id="qty-techno">0</span>
+        <button onclick="increase('techno')">+</button>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <img src="images/newyear.jpg">
+      <h3>New Years Bash (Friday 8pm)</h3>
+      <p>Rs. 1500</p>
+      <div class="qty-control">
+        <button onclick="decrease('newyear')">-</button>
+        <span id="qty-newyear">0</span>
+        <button onclick="increase('newyear')">+</button>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <img src="images/foam.jpg">
+      <h3>Foam Party (Sunday 9pm)</h3>
+      <p>Rs. 1200</p>
+      <div class="qty-control">
+        <button onclick="decrease('foam')">-</button>
+        <span id="qty-foam">0</span>
+        <button onclick="increase('foam')">+</button>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <img src="images/christmas.jpg">
+      <h3>Christmas Party (Saturday 10pm)</h3>
+      <p>Rs. 900</p>
+      <div class="qty-control">
+        <button onclick="decrease('christmas')">-</button>
+        <span id="qty-christmas">0</span>
+        <button onclick="increase('christmas')">+</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="cart">
+    <h2>Cart</h2>
+    <ul id="cart-items"></ul>
+    <h3>Total: Rs. <span id="total">0</span></h3>
+    <button onclick="checkout()">Checkout</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

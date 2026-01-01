@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* PAGE BACKGROUNDS */
+.home-page { background: url("images/home-bg.jpg") center/cover fixed; }
+.about-page { background: url("images/about-bg.jpg") center/cover fixed; }
+.contact-page { background: url("images/contact-bg.jpg") center/cover fixed; }
+.feedback-page { background: url("images/feedback-bg.jpg") center/cover fixed; }
+.events-page { background: radial-gradient(circle, #333, #000); }
+
+body {
+  min-height: 100vh;
+  color: white;
+}
+
+/* NAVBAR */
+nav {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  padding: 12px 30px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.25);
+  letter-spacing: 4px;
+  font-size: 26px;
+  text-shadow: 0 0 15px magenta, 0 0 25px cyan;
+}
+
+.nav-links a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: white;
+}
+
+/* CENTERED PAGES */
+.center-container {
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-box {
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(14px);
+  padding: 55px 75px;
+  border-radius: 28px;
+  text-align: center;
+  max-width: 900px;
+}
+
+.hero-title {
+  font-size: 60px;
+  margin-bottom: 35px;
+}
+
+.hero-text {
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+/* EVENTS */
+.glass-container {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 40px;
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(14px);
+  border-radius: 28px;
+}
+
+.events {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.event-card {
+  background: rgba(255,255,255,0.12);
+  border-radius: 22px;
+  overflow: hidden;
+  padding-bottom: 15px;
+}
+
+.event-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+.event-card h3,
+.event-card p {
+  margin: 15px;
+}
+
+/* QUANTITY CONTROLS */
+.qty-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.qty-control span {
+  min-width: 20px;
+  text-align: center;
+}
+
+/* BUTTONS */
+button {
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(45deg, #ff00cc, #3333ff);
+  color: white;
+}
+
+/* CART */
+.cart {
+  margin-top: 40px;
+  padding: 25px;
+  background: rgba(255,255,255,0.12);
+  border-radius: 22px;
+}
+
+/* FEEDBACK */
+textarea {
+  width: 340px;
+  height: 160px;
+  padding: 15px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.3);
+}

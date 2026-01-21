@@ -17,7 +17,6 @@ body {
   color: white;
 }
 
-/* NAVBAR */
 nav {
   height: 80px;
   display: flex;
@@ -44,7 +43,6 @@ nav {
   color: white;
 }
 
-/* CENTERED PAGES */
 .center-container {
   height: calc(100vh - 80px);
   display: flex;
@@ -71,7 +69,6 @@ nav {
   line-height: 1.7;
 }
 
-/* EVENTS */
 .glass-container {
   max-width: 1200px;
   margin: 60px auto;
@@ -106,7 +103,6 @@ nav {
   margin: 15px;
 }
 
-/* QUANTITY CONTROLS */
 .qty-control {
   display: flex;
   justify-content: center;
@@ -120,7 +116,6 @@ nav {
   text-align: center;
 }
 
-/* BUTTONS */
 button {
   padding: 8px 18px;
   border-radius: 20px;
@@ -130,7 +125,6 @@ button {
   color: white;
 }
 
-/* CART */
 .cart {
   margin-top: 40px;
   padding: 25px;
@@ -138,7 +132,6 @@ button {
   border-radius: 22px;
 }
 
-/* FEEDBACK */
 textarea {
   width: 340px;
   height: 160px;

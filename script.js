@@ -44,7 +44,6 @@ function checkout() {
   window.location.href = "feedback.html";
 }
 
-/* FEEDBACK NOTEPAD */
 function saveFile() {
   const text = document.getElementById("note").value;
   const blob = new Blob([text], { type: "text/plain" });
@@ -53,7 +52,6 @@ function saveFile() {
   link.download = "feedback.txt";
   link.click();
 }
-
 function loadFile(event) {
   const file = event.target.files[0];
   if (!file) return;

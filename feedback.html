@@ -20,14 +20,13 @@
 <div class="center-container">
   <div class="hero-box">
     <h1 class="hero-title">Feedback</h1>
-
+    <label>Email:</label><br>
+      <input type="text" id="email" placeholder="Enter email"><br><br>
     <textarea id="note" placeholder="Write your feedback here..."></textarea><br><br>
-
     <button onclick="saveFile()">Save Feedback</button>
     <input type="file" accept=".txt" onchange="loadFile(event)">
   </div>
 </div>
-
 <script src="script.js"></script>
 </body>
 </html>
